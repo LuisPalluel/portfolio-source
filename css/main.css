@@ -1,0 +1,352 @@
+body{
+    font-family: "Titilium";
+}
+@font-face {
+    font-family: 'Titilium'; /*a name to be used later*/
+    src: url('../fonts/TitilliumWeb-Regular.ttf'); /*URL to font*/
+}
+#presentationSentences{
+    text-align: center;
+    margin-top: 25%;
+    color: antiquewhite;
+    text-decoration-color: black;
+    text-shadow: 1px 1px black;
+    filter: grayscale(10%);
+}
+
+#haut{
+    display: inline-block;
+    background-image: url(../images/natureSepia.png);
+    background-size: cover;
+    min-height:100%;
+    width: 100%;
+}
+
+.presVert{
+    color: seagreen;
+}
+.button-collapse{
+    position: fixed;
+    top:0;
+    text-shadow: 1px 1px black;
+}
+
+
+.pin-top {
+    position: relative;
+}
+
+
+.pin-bottom {
+    position: relative;
+}
+
+
+.pinned {
+    position: fixed;
+}
+
+#iconMenu{
+    color: seagreen;
+    filter: grayscale(10%);
+    text-shadow: 1px ;
+}
+
+#descriptionAll{
+    padding: 0;
+}
+
+.section{
+    padding-top: 0;
+}
+#descriptionRight{
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    margin: 0;
+    color: white;
+    padding: 5%;
+    text-align: justify;
+}
+
+#descriptionLeft{
+    text-align: center;
+    margin-top: 9%;
+}
+
+.textDesc{
+    margin-top: 10%;
+}
+
+.container li {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0 80px;
+    padding: 0 0 50px 40px;
+    border-left: 2px solid rgba(0,0,0,0.5);
+    position: relative;
+    text-align: -webkit-match-parent;
+}
+
+/* CV */
+
+#cv{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+
+}
+
+#cv-content{
+    width: 90%;
+    padding: 40px 0;
+    margin: auto;
+}
+
+#cv-content ul{
+    float: left;
+    display: inline-block;
+    width: 70%;
+    margin: 40px 0;
+}
+
+#cv-content ul li{
+    display: inline-block;
+    width: 100%;
+
+    margin: 0 0 0 80px;
+    padding: 0 0 50px 40px;
+
+    border-left: 2px solid rgba(0,0,0,0.5);
+    position: relative;
+}
+
+#cv-content ul li.comp{
+    padding: 0 0 30px 40px;
+}
+
+#cv-content ul li div{
+    padding: 5px;
+}
+
+.timeline-side{
+    display: block;
+    width: 35px;
+    background-color: #FFF;
+
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    color: #000;
+}
+
+.timeline-side i{
+    margin-left: -3px;
+    transition: transform 0.2s ease-in 0s;
+    transform: rotate(90deg);
+}
+
+#cv-content ul li:hover  .timeline-side i{
+    transform: rotate(0deg);
+}
+
+#cv-content #formations ul li:hover  .timeline-side i{
+    color: #64b5f6;
+}
+
+#cv-content #experiences ul li:hover  .timeline-side i{
+    color: #ba68c8;
+}
+
+.timeline-date span{
+    display: inline-block;
+    margin: -1px 0 10px 0;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#formations .timeline-date span{
+    background: #64b5f6;
+}
+
+#experiences .timeline-date span{
+    background: #ba68c8;
+}
+
+#cv-content > .row > .col > h3 {
+    display: inline-block;
+    margin: 40px 0px 40px 0;
+    padding: 5px 8px 10px 8px;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    float: right;
+}
+
+#cv-content > #formations > .col > h3 {
+    border-bottom: 2px solid #64b5f6;
+}
+
+#cv-content > #experiences > .col > h3 {
+    border-bottom: 2px solid #ba68c8;
+}
+
+#cv-content > #competences > .col > h3 {
+    border-bottom: 2px solid #ff8a65;
+}
+
+
+.timeline-titre{
+    margin: 0 0 10px 0;
+    color: #000;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.timeline-lieu{
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.timeline-contenu{
+    width: 90%;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.timeline-pict img{
+    width: auto;
+    height: 70px;
+}
+
+.timeline-outil{
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.timeline-exp{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+#cv-content hr{
+    display: block;
+    clear: both;
+    width: 80%;
+}
+
+@media(max-width: 920px){
+    #cv-content > span{
+        width: 100%;
+        margin: 40px 0;
+        text-align: center;
+    }
+}
+
+#formations li, #experiences li{
+    opacity: 0;
+}
+
+.titre-section {
+    max-width: 420px;
+    min-width: 250px;
+    margin: 10px auto 50px auto;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666;
+    border: 2px solid #666;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.titre-section:hover{
+    border: 2px solid #64b5f6;
+}
+
+.videos{
+    display: none;
+}
+
+#projets > div > h3{
+    border-bottom: 2px solid #26a69a;
+}
+
+.videos h5 {
+    color: #26a69a;
+}
+
+#projets span{
+    font-size: 150%;
+    bottom: -100%;
+}
+
+#projets .card:hover .blur{
+    background-color: black;
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    height: 35%;
+    opacity: 0;
+}
+
+#projets .card:hover span{
+    bottom: -4%;
+    transition: bottom 0.3s, opacity 1s;
+}
+
+#projets .card:hover .blur{
+    bottom: 0;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#projetsLigne10{
+    font-weight: bolder;
+}
+
+#contact {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#contact .titre-section {
+    max-width: 420px;
+    min-width: 250px;
+    margin: 10px auto 50px auto;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#contact .titre-section:hover{
+    border: 2px solid #64b5f6;
+}
+
+
+.page-footer{
+    padding: 0;
+}
+
+a{
+    color: black;
+}
+
+.page-footer container{
+    height: 1%;
+}
